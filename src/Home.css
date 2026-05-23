@@ -1,0 +1,262 @@
+.section-one {
+    height: 91vh;
+    width: 100vw;
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.section-three {
+    height: 90vh;
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.section-four-wrapper {
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
+}
+
+.section-four {
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+
+.section-two {
+  height: 95vh;
+  scroll-snap-align: center;
+  scroll-snap-stop: always;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  gap: 30px;
+  padding-top: 35px;
+}
+
+.bottom-section-two {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 0.05fr 0.95fr 0.05fr;
+  place-items: center;
+  justify-content: center;
+}
+
+.grid-section-two {
+    display: grid;
+    grid-template-columns: repeat(2, 0.5fr);
+    place-items: center;
+    gap: 20px;
+}
+
+.move-left, .move-right {
+  padding: 10px;
+  background: none;
+  font-size: 40px;
+  border: none;
+  font-family: 'Fake Receipt';
+  color: white;
+}
+
+.move-right {
+  justify-content: right;
+  align-items: right;
+}
+
+.heading-section-two, .heading-section-three {
+  font-family: var(--primary-font);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 0.8;
+}
+
+.heading-section-two > h1, .heading-section-three > h1  {
+  font-size: 65px;
+}
+
+.heading-section-two > p, .heading-section-three > p {
+  font-size: 22px;
+}
+
+.heading-section-two > p {
+  text-align: center;
+  width: 65%;
+}
+
+.heading-section-three > p {
+  background-color: #1D3F64;
+  text-align: center;
+  width: 60%;
+}
+
+.section-three, .section-four {
+  color: white;
+}
+
+.heading-section-three {
+  font-family: var(--primary-font);
+  display: flex;
+  flex-direction: column;
+  line-height: 0.9;
+  margin-bottom: 16px;
+}
+
+.card-dropdown {
+  display: grid;
+  grid-template-columns: 0.45fr 0.4fr;
+  gap: 20px;
+  justify-content: center;
+}
+
+.section-four h1 {
+  font-family: 'Rofane';
+  font-size: 75px;
+  line-height: 0.9;
+}
+
+.search-effect {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.search-effect > p {
+  font-family: 'Rofane';
+  font-size: 22px;
+  text-align: center;
+}
+
+.search-effect > button {
+  width: 40%;
+}
+
+.get-button {
+  width: 30vw;
+  background-color: #101514;
+  padding: 15px 20px 15px 20px;
+  border-radius: 20px;
+  border: none;
+  font-family: 'Fake Receipt';
+  color: white;
+}
+
+@media (max-width: 1200px) {
+    
+    .section-two {
+      height: 165vh;
+      justify-content: flex-start;
+      width: 100%;
+    }
+    .grid-section-two {
+      grid-template-columns: 0.9fr;
+      justify-content: center;
+      width: 100%;
+    }
+    
+    .card-dropdown {
+      width: 80%;
+      grid-template-columns: 1fr;
+    }
+
+    .panel-right {
+      width: 100%;
+      border: 10px;
+    }
+
+    .section-three {
+      height: 110vh;
+    }
+
+    .heading-section-three {
+      margin-bottom: 30px;
+    }
+
+    .section-four {
+      width: 100%;
+    }
+
+    .search-effect {
+      width: 70%;
+
+    }
+
+    .search-effect > button {
+      width: 40%;
+    }
+}
+
+@media (max-width: 500px) {
+  .section-one {
+    height: 90vh;
+  }
+
+  .section-two {
+    height: auto;
+  }
+
+  .grid-section-two {
+      grid-template-columns: 1fr;
+      justify-content: center;
+    }
+
+  .heading-section-two {
+    gap: 5px;
+    width: 100%;
+  }
+
+  .heading-section-two > p {
+    width: 90%;
+  }
+
+  .heading-section-three > h1 {
+    font-size: 50px;
+  } 
+  
+  .heading-section-three > p {
+    width: 85%;
+    font-size: 25px;
+  }  
+
+  .section-three {
+    height: 100vh;
+    justify-content: flex-start;
+    padding-top: 50px;
+  }
+
+  .section-four {
+    height: 45vh;
+  }
+
+  .heading-s4 > h1 {
+    font-size: 50px;
+  }
+
+  .search-effect {
+    width: 100%;
+  }
+
+  .search-effect > p {
+    width: 90%;
+    font-size: 25px;
+  }
+
+}

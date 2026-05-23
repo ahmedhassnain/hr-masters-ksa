@@ -1,0 +1,143 @@
+.footer-container {
+    width: 100vw;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    position: relative;
+    background-color: #101514;
+}
+
+.footer-row-one {
+    width: 80%;
+    display: grid;
+    grid-template-columns: 0.5fr 0.25fr 0.25fr;
+}
+
+.section-one-r1 {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: white;
+}
+
+.section-one-r1 > h3, .section-two-r1 > h3, .section-three-r1 > h3  {
+    font-family: 'Fake Receipt'; 
+}
+
+.section-two-r1, .section-three-r1 {
+    color: white;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+.list-of-header {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    color: white;
+    font-family: 'Rofane';
+    text-align: right;
+    font-size: 20px;
+}
+
+.social-link > img {
+    width: 25px;
+    height: 25px;
+}
+
+.footer-row-two {
+    width: 80%;
+    display: flex;
+    gap: 20px;
+}
+
+.social-link {
+    padding: 10px;
+    background-color: #2a2a2a;
+    border-radius: 10px;
+}
+
+.footer-row-three {
+    width: 80%;
+}
+
+.divider {
+    height: 3px;
+    background-color: #5E6160;
+}
+
+.copyright-bottom {
+    font-family: 'Rofane';
+    color: white;
+
+}
+
+@media (max-width: 1200px) {
+    .footer-row-one {
+        width: 95%;
+        grid-template-columns: 0.6fr 0.15fr 0.4fr;
+        justify-content: space-between;
+    }
+
+    .footer-row-two {
+        width: 95%;
+        justify-content: flex-end;
+    }
+
+    .section-one-r1 {
+        width: 100%;
+    }
+
+    .social-link > img {
+    width: 20px;
+    height: 20px;
+    }
+
+}
+
+@media (max-width: 500px) {
+    .footer-row-one {
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 30px;
+    }
+
+    .section-one-r1 {
+        width: 100%;
+    }
+
+    .section-two-r1 {
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .footer-row-two {
+        width: 95%;
+        justify-content: flex-start;
+    }
+
+    .list-of-header {
+        align-items: flex-start;
+    }
+
+    .social-link > img {
+    width: 20px;
+    height: 20px;
+    }
+
+    .section-three-r1 {
+        display: none;
+    }
+
+}
+

@@ -1,0 +1,42 @@
+@font-face {
+  font-family: 'Rofane'; /* Give it a unique name */
+  src: url('fonts/Rofane.otf') format('opentype');
+  unicode-range: U+0030-0039, U+0041-005A, U+0061-007A; 
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; /* Improves loading performance */
+
+}
+
+@font-face {
+  font-family: 'Fake Receipt'; /* Give it a unique name */
+  src: url('fonts/Fake Receipt.otf') format('otf');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; /* Improves loading performance */
+}
+
+:root {
+  --primary-font: 'Rofane', 'Times New Roman', sans-serif;
+  --secondary-font: 'Fake Receipt', 'Times New Roman', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+
+

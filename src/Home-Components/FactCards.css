@@ -1,0 +1,60 @@
+.fact-card-container {
+    width: 25vw;
+    height: 100%;
+    background-color: #5F2838;
+    border: 4px solid black;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.top-panel-fact-card {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.top-panel-fact-card > button { 
+    font-size: 1.5rem;
+    padding: 5px;
+    border-radius: 10px;
+    background: none;
+    border: none;
+    color: white;
+    font-family: var(--secondary-font);
+}
+
+.bottom-panel-fact-card > h1 {
+    font-size: 50px;
+    font-family: var(--primary-font);
+}
+
+.bottom-panel-fact-card > p {
+    font-size: 25px;
+    font-family: var(--primary-font);
+}
+
+.bottom-main-content {
+    animation: fadeIn 0.2s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(5px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 1200px) {
+    .fact-card-container {
+        width: auto;
+    }
+}
+
+@media (max-width: 1200px) {
+    .fact-card-container {
+        width: auto;
+        height: 300px;
+    }
+}

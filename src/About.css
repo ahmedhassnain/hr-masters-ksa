@@ -1,0 +1,437 @@
+.about-section-one {
+    background-color: #5F2838;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.heading-about-s1, .heading-about-s2 {
+    width: 80%;
+    font-family: var(--primary-font);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    line-height: 0.9;
+    color: white;
+}
+
+.heading-about-s1 {
+    scroll-snap-align: center;
+    scroll-snap-type: always;
+}
+
+.heading-about-s3 {
+    width: 80%;
+    font-family: var(--primary-font);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 0.9;
+    color: white;
+}
+
+.heading-about-s1 > h1, .heading-about-s2 > h1, .heading-about-s3 > h1 {
+    font-size: 65px;
+}
+
+.heading-about-s1 > p, .heading-about-s2 > p {
+    width: 60%;
+    font-size: 30px;
+}
+
+.heading-about-s3 > p {
+    width: 80%;
+    font-size: 30px;
+    text-align: center;
+}
+
+.wallet-card-component {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    scroll-snap-align: center;
+    scroll-snap-type: always;
+}
+
+.top-wallet-card {
+    scroll-snap-align: center;
+    scroll-snap-type: always;
+}
+
+.back-wallet-card, .inside-wallet-one, .inside-wallet-two {
+    scroll-snap-align: center;
+    scroll-snap-type: always;
+}
+
+.top-wallet-card, .back-wallet-card, .inside-wallet-one, .inside-wallet-two {
+    border-radius: 50px;
+    display: flex;
+    border: 5px solid black;
+    flex-direction: column;
+    position: absolute;
+    gap: 20px;
+    color: white;
+}
+
+.top-wallet-card, .back-wallet-card {
+    width: 70%;
+    height: 70vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 50px;
+}
+
+
+.top-wallet-card {
+    top: 50px;
+    z-index: 10;
+}
+
+.back-wallet-card {
+    z-index: 5;
+    top: 120px;
+}
+
+.inside-wallet-one, .inside-wallet-two {
+    width: 60%;
+    height: 50vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.inside-wallet-one {
+    background-image: url(./assets/inside-wallet-one.png);
+    z-index: 7;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+    background-position: center;
+    top: 390px;
+    padding: 50px;
+}
+
+.inside-wallet-two {
+    padding: 20px;
+    background-image: url(./assets/inside-wallet-two.jpg);
+    z-index: 6;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+    background-position: 0% 30%;
+    top: 470px;
+
+}
+
+.top-inside-wallet-two {
+    display: flex;
+    padding: 20px;
+    width: 100%;
+    background-color: rgb(175, 175, 17);
+    justify-content: space-between;
+    border-radius: 10px;
+    border: 5px solid black;
+    font-family: var(--secondary-font);
+    margin-top: 50px;
+}
+
+.bottom-inside-wallet-two {
+    padding-right: 30px;
+}
+
+.bottom-inside-wallet-one > button, .bottom-inside-wallet-two > button {
+    border: none;
+    background: none;
+    color: white;
+    font-size: 20px;
+}
+
+.top-inside-wallet-one {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.top-inside-wallet-one > h1 {
+    font-size: 40px;
+    font-family: var(--secondary-font)
+}
+
+.top-inside-wallet-one > p {
+    font-size: 26px;
+    font-family: var(--primary-font)
+}
+
+
+.top-wallet-card > h1 {
+    font-size: 50px;
+    font-family: var(--secondary-font);
+}
+
+.paragraph-div {
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    font-family: var(--primary-font);
+    font-size: 28px;
+}
+
+.about-section-two {
+    height: 90vh;
+    background-color: #5F2838;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    gap: 10px;
+    scroll-snap-align: center;
+    scroll-snap-type: always;
+}
+
+.heading-about-s2 {
+    margin-bottom: 30px;
+}
+
+.bottom-about-s2 {
+  display: grid;
+  grid-template-columns: 0.05fr 0.95fr 0.05fr;
+  place-items: center;
+}
+
+.grid-about-s2 {
+    display: grid;
+    grid-template-columns: repeat(2, 0.5fr);
+    place-items: center;
+    gap: 20px;
+}
+
+.move-left-s2, .move-right-s2 {
+  padding: 10px;
+  background: none;
+  font-size: 40px;
+  border: none;
+  font-family: 'Fake Receipt';
+  color: white;
+}
+
+.about-section-three {
+    background-color: #5F2838;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    scroll-snap-align: center;
+    scroll-snap-type: always;
+}
+
+.heading-about-s3 {
+    color: white;
+    font-family: var(--primary-font);
+    margin-bottom: 30px;
+}
+
+.bottom-about-s3 {
+    width: 70%;
+    padding: 50px;
+    display: flex;
+    background-color: #131313;
+    overflow: hidden;
+    color: white;
+    display: flex;
+    gap: 40px;
+}
+
+.s3-bottom-one {
+    width: 30%;
+}
+
+.s3-bottom-two {
+    width: 30%;
+}
+
+.s3-bottom-three {
+    width: 30%;
+}
+
+.s3-bottom-one > h1, .s3-bottom-two > h1, .s3-bottom-three > h1 {
+    font-family: var(--secondary-font);
+
+}
+
+.s3-bottom-one > p, .s3-bottom-two > p, .s3-bottom-three > p {
+    font-family: var(--primary-font);
+    font-size: 20px;
+}
+
+.s3-bottom-two > p {
+    width: 100%;
+}
+
+.about-section-four {
+    background-color: #5F2838;
+    height: 55vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    color: white;
+}
+
+.about-section-four > h1 {
+    font-size: 65px;
+    font-family: var(--primary-font)
+}
+
+.section-four-wrapper {
+    scroll-snap-align: center;
+    scroll-snap-type: always;
+}
+
+.search-effect-about {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.search-effect-about > p {
+  font-family: var(--primary-font);
+  font-size: 30px;
+  text-align: center;
+}
+
+.search-effect-about > button {
+  width: 25%;
+  background-color: #101514;
+  padding: 15px 20px 15px 20px;
+  border-radius: 20px;
+  border: none;
+  font-family: 'Fake Receipt';
+  color: white;
+}
+
+@media (max-width: 500px) {
+
+    .heading-about-s1 > h1, .heading-about-s2 > h1, .heading-about-s3 > h1 {
+        font-size: 50px;
+    }
+
+    .heading-about-s1 > p, .heading-about-s2 > p {
+        width: 100%;
+        font-size: 25px;
+    }
+
+    .about-section-one {
+        justify-content: flex-start;
+        scroll-snap-align: center;
+        scroll-snap-type: always;
+    }
+
+    .wallet-card-component {
+        height: auto;
+    }
+
+    .wallet-card {
+        width: 90%;
+    }
+
+    .paragraph-div {
+        font-size: 25px;
+        width: 100%;
+    }
+
+    .top-wallet-card {
+        height: auto;
+    }
+
+    .inside-wallet-one, .inside-wallet-two, .back-wallet-card {
+        display: none;
+    }
+
+    .about-section-two {
+        height: auto;
+        justify-content: flex-start;
+    }
+
+    .back-wallet-card, .inside-wallet-one, .inside-wallet-two {
+        scroll-snap-align: none;
+        scroll-snap-type: none;
+    }
+
+    .about-section-two {
+        height: 205vh;
+        scroll-snap-align: center;
+        scroll-snap-type: always;
+    }
+
+    .grid-about-s2 {
+        grid-template-columns: 1fr;
+    }
+
+    .heading-about-s2 {
+        padding-top: 20px;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .heading-about-s2 > p {
+        text-align: center;
+    }
+
+    .about-section-three {
+        height: 70vh;
+        justify-content: flex-start;
+    }
+
+    .heading-about-s3 {
+        width: 90%;
+        padding-top: 10px;
+    }
+
+    .heading-about-s3 > p {
+        width: 100%;
+    }
+
+    .bottom-about-s3 {
+        width: 100%;
+    }
+
+    .about-section-four {
+        height: 50vh;
+  
+    }
+
+    .about-section-four > h1 {
+        font-size: 50px;
+    }
+
+    .search-effect-about {
+        width: 100%;
+    }
+
+    .search-effect-about > p {
+        width: 90%;
+        font-size: 25px;
+    }  
+
+    .search-effect-about > button {
+      width: 40%;
+    }
+}
+
+
+

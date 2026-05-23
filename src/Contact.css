@@ -1,0 +1,238 @@
+.contact-section-one {
+    background-color: #336E74;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+    width: 100%;
+    color: white;
+    margin-bottom: 100px;
+}
+
+.heading-contact-s1 {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    scroll-snap-type: always;
+    scroll-snap-align: center; 
+}
+
+.heading-contact-s1 > h1 {
+    font-size: 65px;
+    font-family: var(--primary-font);
+}
+
+.heading-contact-s1 > p {
+    font-size: 30px;
+    font-family: var(--primary-font);
+}
+
+.form-component-contact {
+    width: 80%;
+    border: 5px solid black;
+    border-radius: 20px;
+    background-color: #164341;
+    padding: 20px 20px 40px 20px;
+    scroll-snap-type: always;
+    scroll-snap-align: center; 
+}
+
+.individual-item-form {
+    padding: 20px;
+}
+
+.individual-item-form > h1 {
+    font-family: var(--secondary-font);
+    margin-bottom: 10px;
+}
+
+.individual-item-form > input {
+    background: #FAFFEE;
+    width: 100%;
+    font-family: var(--secondary-font);
+    font-size: 24px;
+    padding: 0 20px;          
+    border-radius: 10px;
+    box-sizing: border-box;
+    border: 3px solid green;
+    height: 60px; 
+    line-height: 60px;
+}
+
+.input-form::placeholder {
+    font-size: 24px;
+    font-family: var(--secondary-font);
+    line-height: 60px; 
+}
+
+.text-area-form {
+    background: #FAFFEE;
+    width: 100%;
+    font-family: var(--secondary-font);
+    font-size: 24px;
+    padding: 16px 20px 16px 20px;          
+    border-radius: 10px;
+    box-sizing: border-box;
+    border: 3px solid green;
+    height: 60px; 
+    line-height: 1.5;
+    overflow: hidden;
+    resize: none;
+    height: 150px;
+}
+
+.button-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.item-form-5 {
+    margin-bottom: 20px;
+}
+
+.button-container > button {
+    padding: 10px 40px 10px 40px;
+    font-size: 26px;
+    font-family: var(--secondary-font);
+    border-radius: 20px;
+    background-color: #131313;
+    color: white;
+    border: none;
+}
+
+.contact-section-two {
+    height: 70vh;
+    background-color: #336E74;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+    width: 100%;
+    color: white;
+    scroll-snap-type: always;
+    scroll-snap-align: center; 
+}
+
+.heading-contact-s2 {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 40px;
+}
+
+.heading-contact-s2 > h1 {
+    font-size: 65px;
+    font-family: var(--primary-font);
+}
+
+.heading-contact-s2 > p {
+    font-size: 30px;
+    font-family: var(--primary-font);
+}
+
+
+.social-contacts-s2 {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.social-contact-line {
+    width: 100%;
+    background-color: #131313;
+    padding: 20px;
+    display: flex;
+    gap: 30px;
+    border-radius: 10px;
+}
+
+.left-panel-scs2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.right-panel-scs2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}   
+
+.right-panel-scs2 > h1 {
+    font-family: var(--primary-font)
+}
+
+.left-panel-scs2 > img {
+    width: 40px;
+    height: 40px;
+}
+
+.footer-centered {
+    scroll-snap-type: always;
+    scroll-snap-align: center; 
+}
+
+@media (max-width: 500px) {
+
+    .heading-contact-s1 > h1 {
+        font-size: 50px;
+    }
+
+    .heading-contact-s1 > p {
+        font-size: 25px;
+    }
+
+    .form-component-contact {
+        width: 90%;
+        padding: 20px 10px 40px 10px;
+    }
+
+    .individual-item-form > h1 {
+        font-size: 25px;
+    }
+
+    .input-form::placeholder {
+        font-size: 20px;
+    }
+
+    .text-area-form::placeholder {
+        font-size: 18px;
+    }
+
+    .text-area-form {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .individual-item-form > input {
+        font-size: 20px;
+        height: 50px; 
+        line-height: 50px;
+    }
+
+    .heading-contact-s2 > h1 {
+        font-size: 50px;
+        font-family: var(--primary-font);
+    }
+
+    .heading-contact-s2 > p {
+        font-size: 25px;
+        font-family: var(--primary-font);
+    }
+
+    .right-panel-scs2 > h1 {
+        font-size: 25px;
+    }
+
+    .social-contacts-s2 {
+        width: auto;
+    }
+}

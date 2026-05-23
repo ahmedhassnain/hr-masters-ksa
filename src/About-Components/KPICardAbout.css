@@ -1,0 +1,29 @@
+.kpi-about-container {
+    height: 260px;
+    border-radius: 25px;
+    border: 5px solid black;
+    width: 70%;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: white;
+}
+
+.kpi-about-container > h1 {
+    font-family: var(--secondary-font);
+}
+
+.kpi-about-container > p {
+    font-family: var(--primary-font);
+    font-size: 24px;
+}
+
+@media (max-width: 500px) {
+  .kpi-about-container {
+    width: 100%;
+    height: 400px;
+    justify-content: center;
+    gap: 20px;
+  }
+}

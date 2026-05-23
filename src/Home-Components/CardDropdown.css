@@ -1,0 +1,54 @@
+.trust-card-container {
+    background-color: #164341;
+    border: 4px solid black;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.top-trust-card {
+    width: 35vw;
+}
+
+.top-trust-card > h1, .bottom-trust-card > p {
+    font-family: 'Fake Receipt';
+}
+
+.top-trust-card > h3 {
+    font-family: 'Rofane';
+}
+
+.bottom-trust-card {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.bottom-trust-card > p {
+    font-size: 50px;
+    line-height: 0;
+    width: 100%;
+    text-align: right;
+}
+
+.bottom-trust-card > button {
+    font-family: 'Fake Receipt';
+    color: white;
+    border: none;
+    background: none;
+    padding: 2px;
+}
+
+@media (max-width: 1200px) {
+    .trust-card-container {
+        padding: 10px;
+    }
+
+    .top-trust-card {
+        width: 100%;
+    }
+
+    .top-trust-card > h1 {
+        font-size: 24px;
+    }
+}

@@ -1,0 +1,22 @@
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.75rem 5rem 1rem 5rem;
+    font-family: 'Rofane';
+    font-size: 18px;
+    color: white;
+}
+
+.links-pages {
+    display: flex;
+    gap: 20px;
+}
+
+li {
+    list-style: none;
+
+}
