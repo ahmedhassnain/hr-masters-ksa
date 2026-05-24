@@ -5,6 +5,9 @@
     align-items: center;
     justify-content: center;
     position: relative;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+    padding-top: 30px;
 }
 
 .heading-about-s1, .heading-about-s2 {
@@ -17,10 +20,6 @@
     color: white;
 }
 
-.heading-about-s1 {
-    scroll-snap-align: center;
-    scroll-snap-type: always;
-}
 
 .heading-about-s3 {
     width: 80%;
@@ -55,19 +54,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    scroll-snap-align: center;
-    scroll-snap-type: always;
 }
 
-.top-wallet-card {
-    scroll-snap-align: center;
-    scroll-snap-type: always;
-}
-
-.back-wallet-card, .inside-wallet-one, .inside-wallet-two {
-    scroll-snap-align: center;
-    scroll-snap-type: always;
-}
 
 .top-wallet-card, .back-wallet-card, .inside-wallet-one, .inside-wallet-two {
     border-radius: 50px;
@@ -152,6 +140,7 @@
     background: none;
     color: white;
     font-size: 20px;
+    cursor: pointer;
 }
 
 .top-inside-wallet-one {
@@ -194,8 +183,8 @@
     justify-content: center;
     position: relative;
     gap: 10px;
-    scroll-snap-align: center;
-    scroll-snap-type: always;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
 }
 
 .heading-about-s2 {
@@ -222,6 +211,7 @@
   border: none;
   font-family: 'Fake Receipt';
   color: white;
+  cursor: pointer;
 }
 
 .about-section-three {
@@ -232,8 +222,8 @@
     align-items: center;
     justify-content: center;
     position: relative;
-    scroll-snap-align: center;
-    scroll-snap-type: always;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
 }
 
 .heading-about-s3 {
@@ -296,8 +286,8 @@
 }
 
 .section-four-wrapper {
-    scroll-snap-align: center;
-    scroll-snap-type: always;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
 }
 
 .search-effect-about {
@@ -322,23 +312,27 @@
   border: none;
   font-family: 'Fake Receipt';
   color: white;
+  cursor: pointer;
 }
 
 @media (max-width: 500px) {
 
-    .heading-about-s1 > h1, .heading-about-s2 > h1, .heading-about-s3 > h1 {
-        font-size: 50px;
+
+    .heading-about-s1 {
+        padding-top: 20px;
+    }
+
+    .heading-about-s1 > h1, .heading-about-s2 > h1, .heading-about-s3 > h1, .about-section-four > h1 {
+        font-size: 45px;
     }
 
     .heading-about-s1 > p, .heading-about-s2 > p {
         width: 100%;
-        font-size: 25px;
+        font-size: 20px;
     }
 
     .about-section-one {
         justify-content: flex-start;
-        scroll-snap-align: center;
-        scroll-snap-type: always;
     }
 
     .wallet-card-component {
@@ -348,6 +342,10 @@
     .wallet-card {
         width: 90%;
     }
+
+    .top-wallet-card > h1 {
+        font-size: 35px;
+    }    
 
     .paragraph-div {
         font-size: 25px;
@@ -367,16 +365,7 @@
         justify-content: flex-start;
     }
 
-    .back-wallet-card, .inside-wallet-one, .inside-wallet-two {
-        scroll-snap-align: none;
-        scroll-snap-type: none;
-    }
 
-    .about-section-two {
-        height: 205vh;
-        scroll-snap-align: center;
-        scroll-snap-type: always;
-    }
 
     .grid-about-s2 {
         grid-template-columns: 1fr;
@@ -394,7 +383,7 @@
 
     .about-section-three {
         height: 70vh;
-        justify-content: flex-start;
+        justify-content: space-around;
     }
 
     .heading-about-s3 {
@@ -403,7 +392,8 @@
     }
 
     .heading-about-s3 > p {
-        width: 100%;
+        width: 80%;
+        font-size: 20px;
     }
 
     .bottom-about-s3 {
@@ -415,17 +405,13 @@
   
     }
 
-    .about-section-four > h1 {
-        font-size: 50px;
-    }
-
     .search-effect-about {
         width: 100%;
     }
 
     .search-effect-about > p {
         width: 90%;
-        font-size: 25px;
+        font-size: 20px;
     }  
 
     .search-effect-about > button {

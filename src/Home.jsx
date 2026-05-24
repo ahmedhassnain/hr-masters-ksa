@@ -8,18 +8,7 @@ import React from 'react'
 import { motion } from 'framer-motion'
 import './Home.css'
 
-
-const fadeUp = {
-    hidden: { opacity: 0, y: 60 },
-    visible: { opacity: 1, y: 0 }
-}
-
-const fadeUpFurther = {
-    hidden: { opacity: 0, y: 0 },
-    visible: { opacity: 1, y: -15}
-}
-
-export default function Home({ colorScheme }) {
+export default function Home({ colorScheme, changePage }) {
 
     React.useEffect(() => {
                 document.body.style.backgroundColor = "#1D3F64"
@@ -27,6 +16,23 @@ export default function Home({ colorScheme }) {
 
     
     const [startingIndex, setStartingIndex] = React.useState(0)
+
+    const fadeUp = {
+    hidden: { opacity: 0, y: 60 },
+    visible: { opacity: 1, y: 0 }
+    }
+
+    const fadeUpFurther = {
+        hidden: { opacity: 0, y: 0 },
+        visible: { opacity: 1, y: -15}
+    }
+
+    const mobileView = window.InnerWidth <= 500;
+    const focusedSection = React.useRef(null)
+
+    function scrollIntoView() {
+        focusedSection.current.scrollIntoView( { behavior: 'smooth' } )
+    }
 
 
     return (
@@ -41,11 +47,11 @@ export default function Home({ colorScheme }) {
                 animate="visible"
                 transition={{ duration: 0.3, ease: "easeOut" }}
             >
-                <CardComponent />
+                <CardComponent changePage = {changePage} scrollIntoView = {scrollIntoView} />
             </motion.div>
 
             {/* Section 2 */}
-            <div className = "section-two" style = {{backgroundColor: colorScheme}}>
+            <div ref = {focusedSection} className = "section-two" style = {{backgroundColor: colorScheme}}>
                 <motion.div
                     className = "heading-section-two"
                     variants={fadeUpFurther}
@@ -119,11 +125,10 @@ export default function Home({ colorScheme }) {
                         <h1>Start Your Hire.</h1>
                         <div className = "search-effect">
                             <p>Discuss your workforce needs with us so we can help you build a team that drives results.</p>
-                            <button className = "get-button">Get In Touch &gt;</button>
+                            <button onClick = {() => changePage("Contact")} className = "get-button">Get In Touch &gt;</button>
                         </div>
                     </motion.div>
                 </div>
-                <Footer />
             </div>
         </div>
     )

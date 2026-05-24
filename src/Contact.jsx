@@ -3,6 +3,7 @@ import React from "react"
 import logoLinkedIn from "./assets/linkedin-logo.png"
 import logoEmail from "./assets/mail-logo.png"
 import logoPhone from "./assets/telephone-logo.png"
+import { CopyToClipboard } from 'react-copy-to-clipboard';
 import { motion } from "framer-motion"
 import Footer from "./Footer.jsx"
 
@@ -26,6 +27,10 @@ export default function Contact() {
     const fadeSection = {
         hidden: {opacity: 0, y: 60},
         visible: {opacity: 1, y: 0}
+    }
+
+    function redirectLinkedIn() {
+        window.open("https://www.linkedin.com/company/hr-masters-ksa", "_blank")
     }
 
     return (
@@ -100,16 +105,20 @@ export default function Contact() {
                     whileInView = "visible"
                     viewport = {{ once: false, amount: 0.2}}
                     transition = {{ duration: 0.3, ease: "easeOut"}}
-                >
-                    <div className = "social-contact-line">
-                        <div className = "left-panel-scs2">
-                            <img src = {logoEmail} />
+                >   
+                    <CopyToClipboard text="info@hrmastersksa.com" onCopy={() => alert("Email copied to your clipboard!")}>
+                        <div className = "social-contact-line">
+                            {/* <CopyToClipboard text="info@hrmastersksa.com" onCopy={() => alert("Email copied to your clipboard!")}> */}
+                                <div className = "left-panel-scs2">
+                                    <img src = {logoEmail} />
+                                </div>
+                                <div className = "right-panel-scs2">
+                                    <h1>info@hrmastersksa.com</h1>
+                                </div>
+                            {/* </CopyToClipboard> */}
                         </div>
-                        <div className = "right-panel-scs2">
-                            <h1>info@hrmastersksa.com</h1>
-                        </div>
-                    </div>
-                    <div className = "social-contact-line">
+                    </CopyToClipboard>
+                    <div onClick = {() => redirectLinkedIn()} className = "social-contact-line">
                         <div className = "left-panel-scs2">
                             <img src = {logoLinkedIn} />
                         </div>
@@ -117,19 +126,20 @@ export default function Contact() {
                             <h1>HR Masters KSA</h1>
                         </div>
                     </div>
-                    <div className = "social-contact-line">
-                        <div className = "left-panel-scs2">
-                            <img src = {logoPhone} />
+                    <CopyToClipboard text="+966 50 341 2812" onCopy={() => alert("Phone Number copied to your clipboard!")}>
+                        <div className = "social-contact-line">
+                            <div className = "left-panel-scs2">
+                                    <img src = {logoPhone} />
+                            </div>
+                            <div className = "right-panel-scs2">
+                                    <h1>+966 50 341 2812</h1>
+                            </div>
                         </div>
-                        <div className = "right-panel-scs2">
-                            <h1>+966 50 341 2812</h1>
-                        </div>
-                    </div>
+                    </CopyToClipboard>
                 </motion.div>
 
         </div>
-
-        <Footer className = "footer-centered"/>
+        
         </>
     )
 }

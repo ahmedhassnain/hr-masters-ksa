@@ -8,6 +8,8 @@
     gap: 30px;
     position: relative;
     background-color: #101514;
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
 }
 
 .footer-row-one {
@@ -42,9 +44,10 @@
     flex-direction: column;
     gap: 5px;
     color: white;
-    font-family: 'Rofane';
+    font-family: var(--primary-font);
     text-align: right;
     font-size: 20px;
+    cursor: pointer;
 }
 
 .social-link > img {
@@ -62,6 +65,7 @@
     padding: 10px;
     background-color: #2a2a2a;
     border-radius: 10px;
+    cursor: pointer;
 }
 
 .footer-row-three {
@@ -74,7 +78,7 @@
 }
 
 .copyright-bottom {
-    font-family: 'Rofane';
+    font-family: var(--primary-font);
     color: white;
 
 }

@@ -1,7 +1,7 @@
 .section-one {
     height: 91vh;
     width: 100vw;
-    scroll-snap-align: center;
+    scroll-snap-align: start;
     scroll-snap-stop: always;
     display: flex;
     flex-direction: column;
@@ -12,7 +12,7 @@
 
 .section-three {
     height: 90vh;
-    scroll-snap-align: center;
+    scroll-snap-align: start;
     scroll-snap-stop: always;
     display: flex;
     flex-direction: column;
@@ -22,7 +22,7 @@
 }
 
 .section-four-wrapper {
-    scroll-snap-align: center;
+    scroll-snap-align: start;
     scroll-snap-stop: always;
 }
 
@@ -38,7 +38,7 @@
 
 .section-two {
   height: 95vh;
-  scroll-snap-align: center;
+  scroll-snap-align: start;
   scroll-snap-stop: always;
   color: white;
   display: flex;
@@ -73,6 +73,11 @@
   font-family: 'Fake Receipt';
   color: white;
 }
+
+.move-left:hover, .move-right:hover {
+  cursor: pointer;
+}
+
 
 .move-right {
   justify-content: right;
@@ -126,7 +131,7 @@
 }
 
 .section-four h1 {
-  font-family: 'Rofane';
+  font-family: var(--primary-font);
   font-size: 75px;
   line-height: 0.9;
 }
@@ -140,7 +145,7 @@
 }
 
 .search-effect > p {
-  font-family: 'Rofane';
+  font-family: var(--primary-font);
   font-size: 22px;
   text-align: center;
 }
@@ -157,6 +162,7 @@
   border: none;
   font-family: 'Fake Receipt';
   color: white;
+  cursor: pointer;
 }
 
 @media (max-width: 1200px) {
@@ -211,6 +217,7 @@
 
   .section-two {
     height: auto;
+    width: 100vw;
   }
 
   .grid-section-two {
@@ -223,17 +230,20 @@
     width: 100%;
   }
 
+  .heading-section-two, .heading-section-three, .heading-s4 {
+    padding-top: 50px;
+  }
+
   .heading-section-two > p {
     width: 90%;
   }
 
-  .heading-section-three > h1 {
-    font-size: 50px;
-  } 
+  .heading-section-two > h1, .heading-section-three > h1, .heading-s4 > h1 {
+    font-size: 45px;
+  }
   
   .heading-section-three > p {
     width: 85%;
-    font-size: 25px;
   }  
 
   .section-three {
@@ -242,12 +252,9 @@
     padding-top: 50px;
   }
 
+
   .section-four {
     height: 45vh;
-  }
-
-  .heading-s4 > h1 {
-    font-size: 50px;
   }
 
   .search-effect {
@@ -256,7 +263,6 @@
 
   .search-effect > p {
     width: 90%;
-    font-size: 25px;
   }
 
 }

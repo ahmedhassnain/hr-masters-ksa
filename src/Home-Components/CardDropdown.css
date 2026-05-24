@@ -15,7 +15,7 @@
 }
 
 .top-trust-card > h3 {
-    font-family: 'Rofane';
+    font-family: var(--primary-font);
 }
 
 .bottom-trust-card {
@@ -37,6 +37,7 @@
     border: none;
     background: none;
     padding: 2px;
+    cursor: pointer;
 }
 
 @media (max-width: 1200px) {

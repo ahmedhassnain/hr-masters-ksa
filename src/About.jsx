@@ -223,7 +223,6 @@ export default function About({ colorScheme }) {
                 </div>
             </motion.div>
 
-            <Footer />
         </div>
         </>
     )

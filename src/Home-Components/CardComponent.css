@@ -29,6 +29,12 @@
     color: white;
 }
 
+.top-row-card > button:hover {
+    cursor: pointer;
+    border: 2px solid rgba(236, 236, 236, 0.429);
+    transition: border 0.05s linear;
+}
+
 .welcome-button {
     height: 50px;
     background-color: #232322;
@@ -39,10 +45,11 @@
     align-items: center;
     line-height: 0;
     color: white;
+    border: none;
 }
 
 .top-row-card > h3 {
-    font-family: 'Rofane';
+    font-family: var(--primary-font);
     font-weight: 100;
     font-size: 24px;
     width: 30%;
@@ -56,7 +63,7 @@
 }
 
 .bottom-row-card > h1 {
-    font-family: 'Rofane';
+    font-family: var(--primary-font);
     font-weight: 100;
     color: white;
     font-size: 62px;
@@ -127,7 +134,7 @@
 
     .bottom-row-card > h1 {
         order: 2;
-        font-family: 'Rofane';
+        font-family: var(--primary-font);
         font-weight: 500;
         -webkit-text-stroke: 0.3px;
         color: white;
@@ -143,7 +150,7 @@
     }
 
     .top-row-card > h3 {
-        font-family: 'Rofane';
+        font-family: var(--primary-font);
         font-weight: 100;
         font-size: 22px;
         width: 90%;

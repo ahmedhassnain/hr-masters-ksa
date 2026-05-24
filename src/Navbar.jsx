@@ -1,5 +1,6 @@
 import './Navbar.css'
 import logoHRMasters from "./assets/logo-hr-masters.png"
+import { Link } from 'react-router-dom'
 
 
 export default function Navbar({ backgroundColor, changePage }) {

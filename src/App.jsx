@@ -31,7 +31,9 @@ export default function App() {
     <>
       <Navbar backgroundColor = {colorScheme} changePage = {changePage}/>
 
-      {currentPage == "Home" ? <Home colorScheme = {colorScheme}/> : currentPage == "About" ? <About colorScheme = {colorScheme} /> : <Contact colorScheme = {colorScheme} />}
+      {currentPage == "Home" ? <Home changePage = {changePage} colorScheme = {colorScheme}/> : currentPage == "About" ? <About changePage = {changePage} colorScheme = {colorScheme} /> : <Contact colorScheme = {colorScheme} />}
+
+      <Footer changePage = {changePage}/>
 
     </>
   )
