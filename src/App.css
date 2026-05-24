@@ -10,7 +10,7 @@
 
 @font-face {
   font-family: 'Fake Receipt'; /* Give it a unique name */
-  src: url('fonts/Fake Receipt.otf') format('otf');
+  src: url('fonts/Fake-Receipt.otf') format('opentype');
   font-weight: normal;
   font-style: normal;
   font-display: swap; /* Improves loading performance */
