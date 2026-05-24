@@ -9,16 +9,25 @@ import { motion } from "framer-motion"
 export default function About({ colorScheme }) {
 
         React.useEffect(() => {
+                const cardHeightVar = cardRef.current.offsetHeight;
+                console.log(cardHeightVar)
+                setCardHeight(cardHeightVar)
+        }, [])
+
+
+        React.useEffect(() => {
             document.body.style.backgroundColor = "#5F2838"
         }, [])
 
-    const [expandedState, setExpandedState] = React.useState(false)
-    const [expandedId, setExpandedId] = React.useState(null)
-    const isMobile = window.innerWidth <= 500
+        const [expandedState, setExpandedState] = React.useState(false)
+        const [expandedId, setExpandedId] = React.useState(null)
+        const [cardHeight, setCardHeight] = React.useState(null);
+        const cardRef = React.useRef();
+        const isMobile = window.innerWidth <= 500
 
     function adjustSectionHeight() {
         if (isMobile) {
-            return { height: "105vh", transition: "height 0.2s ease" }
+            return { height: `calc(${cardHeight}px + 250px)` , transition: "height 0.2s ease" }
         }
 
         if (expandedId == 1 && expandedState == true) {
@@ -87,6 +96,7 @@ export default function About({ colorScheme }) {
                     whileInView = "visible"
                     viewport= {{once: false, amount: 0.2}}
                     transition = {{duration: 0.3, ease : "easeOut"}}
+                    ref = {cardRef}
                 >
                     <h1 className = "heading-top-card">Our Story</h1>
                     <div className = "paragraph-div">

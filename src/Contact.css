@@ -229,10 +229,15 @@
     }
 
     .right-panel-scs2 > h1 {
-        font-size: 25px;
+        font-size: 1.2rem;
+    }
+
+    .contact-section-two {
+        border: 5px solid blue;
     }
 
     .social-contacts-s2 {
-        width: auto;
+        border: 5px solid red;
+        width: 90%;
     }
 }

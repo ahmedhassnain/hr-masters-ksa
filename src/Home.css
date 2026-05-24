@@ -237,7 +237,7 @@
   }  
 
   .section-three {
-    height: 100vh;
+    height: auto;
     justify-content: flex-start;
     padding-top: 50px;
   }
