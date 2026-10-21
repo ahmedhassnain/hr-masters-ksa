@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 320" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Three color worlds — Home navy, About maroon, Contact teal">
+  <rect width="1600" height="320" fill="#0f0f0f"/>
+
+  <rect x="60" y="40" width="480" height="240" rx="20" fill="#1D3F64" stroke="#000000" stroke-width="3"/>
+  <text x="100" y="100" font-family="'Courier New', monospace" font-size="18" fill="#ffffff" letter-spacing="3">HOME</text>
+  <text x="100" y="200" font-family="Georgia, serif" font-size="56" fill="#ffffff">Deep <tspan font-style="italic">navy</tspan></text>
+  <text x="100" y="245" font-family="Georgia, serif" font-size="20" fill="#ffffff" opacity="0.75">What we do, trust, hire.</text>
+
+  <rect x="560" y="40" width="480" height="240" rx="20" fill="#5F2838" stroke="#000000" stroke-width="3"/>
+  <text x="600" y="100" font-family="'Courier New', monospace" font-size="18" fill="#ffffff" letter-spacing="3">ABOUT</text>
+  <text x="600" y="200" font-family="Georgia, serif" font-size="56" fill="#ffffff">Soft <tspan font-style="italic">maroon</tspan></text>
+  <text x="600" y="245" font-family="Georgia, serif" font-size="20" fill="#ffffff" opacity="0.75">Our story, values, difference.</text>
+
+  <rect x="1060" y="40" width="480" height="240" rx="20" fill="#336E74" stroke="#000000" stroke-width="3"/>
+  <text x="1100" y="100" font-family="'Courier New', monospace" font-size="18" fill="#ffffff" letter-spacing="3">CONTACT</text>
+  <text x="1100" y="200" font-family="Georgia, serif" font-size="56" fill="#ffffff">Clean <tspan font-style="italic">teal</tspan></text>
+  <text x="1100" y="245" font-family="Georgia, serif" font-size="20" fill="#ffffff" opacity="0.75">Form, number, inbox.</text>
+</svg>
