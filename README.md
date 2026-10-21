@@ -1,10 +1,10 @@
 <div align="center">
 
-![HR Masters KSA — Building Teams that Derive Success](docs/hero-banner.svg)
+![HR Masters KSA: Building Teams that Derive Success](docs/hero-banner.svg)
 
 ### Building teams that derive success.
 
-A website for **HR Masters** — a recruitment and workforce consultancy helping companies across Saudi Arabia find and keep the right people.
+This is the website for **HR Masters** which serves as a recruitment and workforce consultancy helping companies across Saudi Arabia find and keep the right people.
 
 [**Live site →**](https://hr-masters-ksa.vercel.app)
 
@@ -12,11 +12,11 @@ A website for **HR Masters** — a recruitment and workforce consultancy helping
 
 <br/>
 
-![Three color worlds — Home navy, About maroon, Contact teal](docs/color-worlds.svg)
+![Three color worlds: the Home navy, the About maroon, and the Contact teal](docs/color-worlds.svg)
 
 ## Three pages, three worlds
 
-**Home** opens in deep navy. A wallet of cards stacked on top of each other — one in front, three peeking out from behind — walks through what the company does, the values that guide every placement, and the trust-and-why.
+**Home** opens in deep navy. A wallet of cards stacked on top of each other where one is in front, and the others are peeking out from behind. This walks through exactly what the company does, the values that guide every placement, and the trust-and-why.
 
 **About** switches to maroon. The wallet metaphor returns, but this time the cards *open*: click the chevron on any card and the whole layout breathes outward as the content expands.
 
@@ -35,17 +35,17 @@ Scroll inside a page and the sections snap. Switch pages and the color behind ev
 
 Two typefaces do all the work.
 
-**Rofane**, a tall-contrast serif, carries the headlines and the longer paragraphs. Its `unicode-range` is narrowed to Latin letters and digits on purpose — anything outside that falls back cleanly instead of rendering half in-font and half out.
+**Rofane**, a tall-contrast serif, carries the headlines and the longer paragraphs. Its `unicode-range` is narrowed to Latin letters and digits on purpose so that anything outside that falls back cleanly instead of rendering half in-font and half out.
 
 **Fake Receipt**, a chunky pixel display face, handles buttons, labels, and the retro accents. It's the thing that keeps the design from reading as another corporate SaaS page.
 
-Everything else — spacing, color, borders — is kept quiet so those two faces can do the talking.
+Everything else like spacing, color, and borders is kept quiet so those two faces can do the talking.
 
 <br/>
 
 ## Stack
 
-Vite + React for the shell. Framer Motion for the entrance animations and the scroll-linked fades. CSS scroll-snap for the section-by-section scroll. No UI library, no Tailwind, no CSS-in-JS — plain CSS files sitting next to each component. Deployed on Vercel.
+Vite + React for the shell. Framer Motion for the entrance animations and the scroll-linked fades. CSS scroll-snap for the section-by-section scroll. No UI library, no Tailwind, no CSS-in-JS as all plain CSS files are sitting next to each component. Deployed on Vercel.
 
 <br/>
 
@@ -88,7 +88,7 @@ src/
 └── assets/                 fonts, wallet textures, bubble patterns
 ```
 
-Framer Motion variants live at the top of each page file rather than in a shared config — easier to tune per-section when they're sitting next to the JSX they drive.
+Framer Motion variants live at the top of each page file rather than in a shared config which is easier to tune per-section when they're sitting next to the JSX they drive.
 
 <br/>
 
@@ -110,6 +110,6 @@ Card positions in the About wallet stack use `vh` units with a lookup table inst
 
 Design and build by **[Ahmed Hassnain](https://github.com/ahmedhassnain)**
 
-Rofane · Fake Receipt — used under their respective licenses.
+Rofane · Fake Receipt - used under their respective licenses.
 
 </div>
